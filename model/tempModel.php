@@ -18,7 +18,7 @@ class TempModel extends Model
 
     public function update_cont($ffdb)
     {
-        $sql = "Update codes set cname = 'Raja' where codeid = '1'";
+        $sql = "Update codes set cname = 'Arun' where codeid = '1'";
 
         $query = $ffdb->query($sql);
 
