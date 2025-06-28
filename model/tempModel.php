@@ -25,12 +25,4 @@ class TempModel extends Model
         return $query;
     }
 
-    public function select_contInfo($ffdb)
-    {
-        $sql = "SELECT * FROM tbl_folio_master";
-
-        $query = $ffdb->query($sql);
-
-        return $query;
-    }
 }    
