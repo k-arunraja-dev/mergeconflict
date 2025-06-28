@@ -25,9 +25,9 @@ class TempModel extends Model
         return $query;
     }
 
-    public function delete_cont($ffdb)
+    public function select_contInfo($ffdb)
     {
-        $sql = "DELETE FROM codes from where codeid = '3'";
+        $sql = "SELECT * FROM tbl_folio_master";
 
         $query = $ffdb->query($sql);
 
