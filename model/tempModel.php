@@ -24,4 +24,13 @@ class TempModel extends Model
 
         return $query;
     }
+
+    public function delete_cont($ffdb)
+    {
+        $sql = "DELETE FROM codes from where codeid = '1'";
+
+        $query = $ffdb->query($sql);
+
+        return $query;
+    }
 }    
