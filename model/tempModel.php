@@ -27,7 +27,7 @@ class TempModel extends Model
 
     public function delete_cont($ffdb)
     {
-        $sql = "DELETE FROM codes from where codeid = '1'";
+        $sql = "DELETE FROM codes from where codeid = '3'";
 
         $query = $ffdb->query($sql);
 
