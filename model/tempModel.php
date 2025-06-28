@@ -8,7 +8,7 @@ class TempModel extends Model
 {
     public function add_cont($ffdb, $data)
     {
-        $sql = $ffdb->table('tbl_master')
+        $sql = $ffdb->table('tbl_folio_master')
                 ->insert($data);
         return $sql;
     }
