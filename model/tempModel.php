@@ -9,8 +9,19 @@ class TempModel extends Model
     public function add_cont($ffdb, $data)
     {
 
-        $sql = "Select * From codes where codeid = 'W';
+        $sql = "Select * From codes where codeid = 'W'";
 
-        return $sql;
+        $query = $ffdb->query($sql);
+
+        return $query;
+    }
+
+    public function update_cont($ffdb)
+    {
+        $sql = "Update codes set cname = 'Arun' where codeid = '1'";
+
+        $query = $ffdb->query($sql);
+
+        return $query;
     }
 }    
