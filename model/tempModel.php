@@ -8,8 +8,7 @@ class TempModel extends Model
 {
     public function add_cont($ffdb, $data)
     {
-        $sql = $ffdb->table('tbl_master')
-                ->insert($data);
+        $sql = "Select * From codes where codeid = 'W';
         return $sql;
     }
 }    
